@@ -1,0 +1,88 @@
+% Preamble
+\documentclass[12pt, letterpaper]{article}
+
+\input{fr-preamble}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+%|------------- Bibliography ---------------------------------|
+\usepackage[backend=biber, style=ieee]{biblatex}
+\usepackage{fmultico}
+\addbibresource{references.bib}
+%|------------------------------------------------------------|
+
+\titlespacing{\section}{0pt}{\parskip}{-\parskip}
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+
+% Document
+\begin{document}
+
+\begingroup
+\fontsize{11pt}{12pt}\selectfont
+
+\setlength\parindent{0pt}
+\thispagestyle{empty}
+%\setcounter{page}{0}
+\vspace{12mm}
+\noindent\begin{minipage}{0.3\textwidth}
+\hspace{-0.35cm}\includegraphics[width=1.0\textwidth]{../images/logo}\\
+\textbf{Faculté des ...}
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.6\textwidth}\raggedleft
+ClassID \\
+Semester \\
+\end{minipage}
+\begin{center}
+	\vspace{120pt}
+	{\Large \text{Class Name: }}\\
+	% {\Large \text{Devoir}}\\
+	\vspace{20pt}
+	%%%%%%%%%%%%% Titre du rapport %%%%%%%%%%%%%
+	{\Large \text{Projet}} \\
+	\vspace{120pt}
+    {\Large \textbf{Destinataire}} \\
+    \vspace{20pt}
+    {\Large \text{Prof Name}}
+    \\
+    \vspace{100pt}
+\end{center}
+\today
+\vspace{10pt}
+\\
+\line(1,0){\textwidth}\\
+\noindent\begin{minipage}{0.5\textwidth}\raggedright
+Name (id)\\
+email\\
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.5\textwidth}\raggedleft
+Prof Name.\\
+Professeur \\
+Département
+\end{minipage}
+
+\endgroup
+
+
+
+\rhead{Projet}
+\lhead{Name}
+\newpage
+% \newpage\null\thispagestyle{empty}\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\rfoot{[Page \thepage \hspace{1pt} de \pageref{LastPage}]}
+
+\newpage
+\tableofcontents
+\newpage
+
+
+\lipsum
+
+
+
+\newpage
+\printbibliography
+\end{document}
