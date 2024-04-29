@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}		% Can be removed after putting your text content
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{doi}
+\usepackage[title]{appendix}
+\usepackage[french]{babel}
+
+\usepackage{courier}
+\usepackage{physics}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\usepackage{subcaption}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{wrapfig}
+%\usepackage{minted} % not working yet
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[final]{pdfpages}
+\usepackage{titlesec}
+\usepackage{todonotes}
+
+%|------------- Bibliography ---------------------------------|
+\usepackage[style=ieee]{biblatex}
+\addbibresource{references.bib}
+%|------------------------------------------------------------|
+
+
+\title{Title}
+
+%\day=1 \month=1 \year=2024
+\date{\today}
+\author{
+\textbf{Name} \And
+\affiliations
+Département ... \\
+Université, Québec, Canada \\
+\emails
+email
+}
+%\renewcommand{\headeright}{}
+%\renewcommand{\undertitle}{}
+
+\begin{document}
+%\rhead{}
+% \lhead{}
+\newpage
+% \newpage\null\thispagestyle{empty}\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \rfoot{[Page \thepage]}
+\maketitle
+
+%\newpage
+%\tableofcontents
+%\newpage
+%\listoffigures
+%\listoftables
+%\listoftodos
+%\newpage
+
+
+\lipsum
+
+
+
+\newpage
+\printbibliography
+\end{document}
