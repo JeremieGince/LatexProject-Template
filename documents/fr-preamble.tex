@@ -1,0 +1,113 @@
+%! Author = gince
+%! Date = 1/20/2024
+
+%-----------------------------------------
+% Frame du document
+%-----------------------------------------
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}  % Définit les dimensions des marges
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+
+%-----------------------------------------
+% Core
+%-----------------------------------------
+\usepackage{fancyhdr}           % Numérotation des pages, headers
+\fancyhf{}
+\usepackage{hyperref}           % Références hypertexte
+\usepackage{booktabs,multirow,hhline}        % Tableaux
+\usepackage{graphicx}           % Figures
+\usepackage{subfig,wrapfig,caption}        % Sous-figures, ancrées, mise en forme des captions
+\usepackage{titlesec}            % Mise en forme des sections
+\usepackage{enumitem}           % Personnaliser les énumérations
+\usepackage{color}            % Texte de couleur
+\usepackage[dvipsnames]{xcolor}         % Plus de couleurs funky
+\usepackage{textcomp}
+\usepackage{lastpage}
+\usepackage{csquotes}
+\usepackage{anyfontsize}
+
+\pagestyle{fancy}            % Formattage par défaut des paragraphes
+\parindent=0pt
+\parskip=6pt
+\setlength{\headheight}{15pt}
+\setlength {\marginparwidth }{2cm} 
+
+%-----------------------------------------
+% Math
+%-----------------------------------------
+\usepackage{amsmath,amssymb,amsthm,nicefrac}      % Symboles et versatilité mathématique
+\usepackage{mathrsfs}           % ¯\_(ツ)_/¯ Polices d'écriture en math
+\usepackage{wasysym,marvosym}         % Autres symboles math
+\usepackage{mathtools}           % Peaufine la configuration des équations (when used)
+\usepackage{dsfont}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+%-----------------------------------------
+% Physique
+%-----------------------------------------
+\usepackage{tikz}            % Dessine des figures
+%\usepackage[american]{circuitikz}         % Dessine des schémas de circuits électroniques
+\usetikzlibrary{quantikz}
+
+\usepackage{verbatim}           % Je l'utilise pour écrire en verbatim et pour les commentaires
+%\usepackage{minted}           % Ajoute du langage de prog élégamment
+\usepackage{lipsum}            % Génère le lorem ispum
+\usepackage{siunitx}            % Unités du système international avec \si
+\usepackage{cancel}
+\usepackage{todonotes}
+\usepackage{empheq}
+\usepackage{physics}
+\usepackage{bm}% Your new best friend in LaTeX
+% http://ctan.math.ca/tex-archive/macros/latex/contrib/physics/physics.pdf      La documentation dudit merveilleux package
+
+\usepackage{float}
+
+\usepackage{halloweenmath} % décorations d'halloween pour vos devoirs (J'encourage l'utilisation de la sorcière mathémagique avec \mathwitch )
+
+\def\CQFD{\begin{flushright}CQFD.\end{flushright}}
+\def\RANCHITUP{\begin{flushright}CQFD.\end{flushright}}
+\def\PIFPAF{\begin{flushright}CQFD.\end{flushright}}
+% \RANCHITUP ou \PIFPAF pour écrire un CQFD bien placé
+
+\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{#1}}}}
+\newcommand{\uveci}{{\bm{\hat{\textnormal{\bfseries\i}}}}}
+\newcommand{\uvecj}{{\bm{\hat{\textnormal{\bfseries\j}}}}}
+% Beaux vecteurs unitaires avec \uvec
+
+
+\newcommand{\del}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\delp}[1]{\frac{\partial }{\partial #1}}
+\newcommand{\ddfrac}[2]{\frac{\dd #1}{\dd #2}}
+\newcommand{\ddfracp}[1]{\frac{\dd }{\dd #1}}
+\newcommand{\braAket}[3]{\left<#1\left|#2\right|#3\right>}
+\newcommand{\kbproj}[1]{\ketbra{#1}{#1}}
+
+%-----------------------------------------
+% Références
+%-----------------------------------------
+\numberwithin{table}{section}
+\numberwithin{figure}{section}
+\numberwithin{equation}{section}
+
+
+%-----------------------------------------
+% Entête
+%-----------------------------------------
+% Entête gauche-droite
+\fancyhead[R]{\chaptermark}
+\fancyheadoffset{0 cm}
+
+
+\newcommand{\signature}[2]{
+\noindent\begin{minipage}{0.5\textwidth}\raggedright
+    #1
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}\raggedleft
+    \textbf{Date}: \underline{\hspace{#2}} \\
+    \textbf{Signature}: \underline{\hspace{#2}}
+\end{minipage}
+}
