@@ -1,0 +1,86 @@
+\documentclass[aspectratio=43]{beamer}
+\usepackage[french]{babel}
+\input{beamer_preamble_uds}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage[thinc]{esdiff}
+\newcommand{\del}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\delp}[1]{\frac{\partial }{\partial #1}}
+\newcommand{\ddfrac}[2]{\frac{\dd #1}{\dd #2}}
+\newcommand{\ddfracp}[1]{\frac{\dd }{\dd #1}}
+
+%|------------- Bibliography ---------------------------------|
+\usepackage[style=ieee, sorting=none]{biblatex}
+\addbibresource{references.bib}
+%|------------------------------------------------------------|
+\renewcommand*{\bibfont}{\scriptsize}
+
+\title{Title} %->->->->-> Check hyperref title <-<-<-<-<-
+\subtitle{SubTitle}
+\author[Short Name]{\textcolor{yellow}{Name}}
+\institute[UdeS]{
+    \textcolor{white}{Département de physique}%
+    \\%
+    \textcolor{white}{Université de Sherbrooke}%
+}
+% \year=12023
+\date{\today}
+\logo{\vspace{-1cm}\includegraphics[width=0.2\textwidth]{../images/UdeS_logo_h_blanc_etiquette_verte_cmyk}}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Contents}
+    \tableofcontents
+\end{frame}
+
+
+\section{Section 1}
+\begin{frame}{}
+    \uncover<+->{
+        uncover item 1
+    }
+    \uncover<+->{
+        uncover item 2
+    }
+    \uncover<+->{
+        uncover item 3
+    }
+\end{frame}
+\begin{frame}{itemize}
+    \begin{itemize}[<+->]
+        \item item 1
+        \item item 2
+        \item item 3
+    \end{itemize}
+\end{frame}
+
+
+\section{Section 2}
+\begin{frame}{}
+
+\end{frame}
+
+
+
+\section{}
+\begin{frame}{}
+    \centering
+        \Huge\bfseries
+    \textcolor{yellow}{The End}
+\end{frame}
+
+\section*{References}
+\begin{frame}{References}
+    \begingroup
+    \fontsize{2pt}{12pt}\selectfont
+    \printbibliography
+    \endgroup
+\end{frame}
+
+
+\section*{Annexe}
+
+
+    
+\end{document}
